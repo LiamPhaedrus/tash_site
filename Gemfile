@@ -12,7 +12,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'jbuilder', '~> 2.5'
-gem 'webpacker', '~> 3.2'
+gem 'webpacker', '~> 3.3'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -21,10 +21,17 @@ gem 'webpacker', '~> 3.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'active_model_serializers'
+
+
 group :development, :test do
   gem 'capybara'
   gem 'rspec-rails', '~> 3.5'
   gem 'pry-rails'
+  gem 'database_cleaner'
+  gem "factory_bot"
+  gem 'dotenv-rails'
+  gem 'faker'
 end
 
 group :development do
