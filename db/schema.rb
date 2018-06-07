@@ -20,7 +20,9 @@ ActiveRecord::Schema.define(version: 2018_06_07_162738) do
     t.string "color"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "kit_id"
     t.index ["grouping_id"], name: "index_bags_on_grouping_id"
+    t.index ["kit_id"], name: "index_bags_on_kit_id"
   end
 
   create_table "groupings", force: :cascade do |t|
@@ -52,4 +54,5 @@ ActiveRecord::Schema.define(version: 2018_06_07_162738) do
     t.index ["phrase_id"], name: "index_tiles_on_phrase_id"
   end
 
+  add_foreign_key "bags", "kits"
 end
