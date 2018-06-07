@@ -1,0 +1,19 @@
+# PostgreSQL. Versions 9.1 and up are supported.
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: tash_dev
+test:
+  <<: *default
+  database: tash_test
+
+production:
+  <<: *default
+  database: tash_production
+  username: tash_site
+  password: <%= ENV['TASH_SITE_DATABASE_PASSWORD'] %>
