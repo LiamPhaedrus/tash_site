@@ -29,7 +29,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'pry-rails'
   gem 'database_cleaner'
-  gem "factory_bot"
+  gem "factory_bot_rails"
   gem 'dotenv-rails'
   gem 'faker'
 end
