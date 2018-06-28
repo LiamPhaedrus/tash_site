@@ -22,6 +22,7 @@ gem 'webpacker', '~> 3.3'
 # gem 'capistrano-rails', group: :development
 
 gem 'active_model_serializers'
+gem 'foundation-rails'
 
 
 group :development, :test do
