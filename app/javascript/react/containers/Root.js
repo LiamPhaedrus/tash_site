@@ -2,6 +2,7 @@
 import React from 'react';
 // import { Router, Route, browserHistory } from 'react-router';
 import HomePage from './HomePage';
+import SetContainer from './SetContainer'
 // import WarPage from './containers/Warpage';
 
 // const Root = (props) => {
@@ -15,7 +16,7 @@ import HomePage from './HomePage';
 
 const Root = (props) => {
   return (
-    <HomePage />
+    <SetContainer />
   )
 }
 

@@ -10,7 +10,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-
+gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'webpacker', '~> 3.3'
 # Use Redis adapter to run Action Cable in production
@@ -22,6 +22,7 @@ gem 'webpacker', '~> 3.3'
 # gem 'capistrano-rails', group: :development
 
 gem 'active_model_serializers'
+gem 'foundation-rails'
 
 
 group :development, :test do
